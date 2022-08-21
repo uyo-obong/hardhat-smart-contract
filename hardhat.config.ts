@@ -18,6 +18,10 @@ const config: HardhatUserConfig = {
             url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
             accounts: [GOERLI_PRIVATE_KEY!],
         },
+        localhost: {
+            url: 'http://127.0.0.1:8545/',
+            chainId: 31337,
+        },
     },
 
     etherscan: {
